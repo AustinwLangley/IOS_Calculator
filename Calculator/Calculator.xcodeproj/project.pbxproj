@@ -12,6 +12,7 @@
 		614F94B31B71557D00E4725F /* vader2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 614F94B21B71557D00E4725F /* vader2.wav */; };
 		614F94B51B7156EC00E4725F /* yoda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 614F94B41B7156EC00E4725F /* yoda.wav */; };
 		614F94B71B7157D300E4725F /* swtheme.wav in Resources */ = {isa = PBXBuildFile; fileRef = 614F94B61B7157D300E4725F /* swtheme.wav */; };
+		618770641B7720AF0008F1A9 /* lightsaber_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618770631B7720AF0008F1A9 /* lightsaber_01.wav */; };
 		6191ABC71B6884B50041EDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191ABC61B6884B50041EDDE /* AppDelegate.swift */; };
 		6191ABC91B6884B50041EDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191ABC81B6884B50041EDDE /* ViewController.swift */; };
 		6191ABCC1B6884B50041EDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6191ABCA1B6884B50041EDDE /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		6191ABD11B6884B50041EDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6191ABCF1B6884B50041EDDE /* LaunchScreen.xib */; };
 		6191ABDD1B6884B50041EDDE /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191ABDC1B6884B50041EDDE /* CalculatorTests.swift */; };
 		61A561E71B69CC4100559684 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A561E61B69CC4100559684 /* Calculator.swift */; };
-		61D16BCF1B713FBF00332EA5 /* lightsaber_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61D16BCE1B713FBF00332EA5 /* lightsaber_01.wav */; };
 		61D16BE31B71491D00332EA5 /* vader.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61D16BE21B71491D00332EA5 /* vader.wav */; };
 		61D16BE51B714A0C00332EA5 /* chewy_roar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61D16BE41B714A0C00332EA5 /* chewy_roar.wav */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 		614F94B21B71557D00E4725F /* vader2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vader2.wav; sourceTree = "<group>"; };
 		614F94B41B7156EC00E4725F /* yoda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yoda.wav; sourceTree = "<group>"; };
 		614F94B61B7157D300E4725F /* swtheme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swtheme.wav; sourceTree = "<group>"; };
+		618770631B7720AF0008F1A9 /* lightsaber_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lightsaber_01.wav; sourceTree = "<group>"; };
 		6191ABC11B6884B50041EDDE /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6191ABC51B6884B50041EDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6191ABC61B6884B50041EDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		6191ABDB1B6884B50041EDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6191ABDC1B6884B50041EDDE /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		61A561E61B69CC4100559684 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		61D16BCE1B713FBF00332EA5 /* lightsaber_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lightsaber_01.wav; path = ../../../../../Desktop/lightsaber_01.wav; sourceTree = "<group>"; };
 		61D16BE21B71491D00332EA5 /* vader.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vader.wav; sourceTree = "<group>"; };
 		61D16BE41B714A0C00332EA5 /* chewy_roar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chewy_roar.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,9 +114,9 @@
 				61D16BE41B714A0C00332EA5 /* chewy_roar.wav */,
 				614F94B41B7156EC00E4725F /* yoda.wav */,
 				61D16BE21B71491D00332EA5 /* vader.wav */,
+				618770631B7720AF0008F1A9 /* lightsaber_01.wav */,
 				614F94B01B71544600E4725F /* R2D2.wav */,
 				614F94B21B71557D00E4725F /* vader2.wav */,
-				61D16BCE1B713FBF00332EA5 /* lightsaber_01.wav */,
 				614F94B61B7157D300E4725F /* swtheme.wav */,
 				6191ABCF1B6884B50041EDDE /* LaunchScreen.xib */,
 				6191ABC41B6884B50041EDDE /* Supporting Files */,
@@ -230,12 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618770641B7720AF0008F1A9 /* lightsaber_01.wav in Resources */,
 				6191ABCC1B6884B50041EDDE /* Main.storyboard in Resources */,
 				61D16BE51B714A0C00332EA5 /* chewy_roar.wav in Resources */,
 				614F94B71B7157D300E4725F /* swtheme.wav in Resources */,
 				614F94B31B71557D00E4725F /* vader2.wav in Resources */,
 				6191ABD11B6884B50041EDDE /* LaunchScreen.xib in Resources */,
-				61D16BCF1B713FBF00332EA5 /* lightsaber_01.wav in Resources */,
 				61D16BE31B71491D00332EA5 /* vader.wav in Resources */,
 				614F94B51B7156EC00E4725F /* yoda.wav in Resources */,
 				614F94B11B71544600E4725F /* R2D2.wav in Resources */,

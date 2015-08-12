@@ -10,6 +10,10 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    override func prefersStatusBarHidden() -> Bool{
+        return true
+    }
 
     var userEnteredInput = false
     var operation: String?
@@ -49,6 +53,7 @@ class ViewController: UIViewController {
         
         //Starwars Main theme
         ButtonAudioPlayer7.play()
+        
     }
     
     override func didReceiveMemoryWarning() {
