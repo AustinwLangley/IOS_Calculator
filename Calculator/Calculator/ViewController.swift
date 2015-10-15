@@ -41,15 +41,15 @@ class ViewController: UIViewController {
         for button in calculatorButton {
             button.layer.borderWidth = 0.5
             button.layer.borderColor = UIColor.whiteColor().CGColor
-        }
+    }
         
-        ButtonAudioPlayer1 = AVAudioPlayer(contentsOfURL: ButtonAudioURL1, error: nil)
-        ButtonAudioPlayer2 = AVAudioPlayer(contentsOfURL: ButtonAudioURL2, error: nil)
-        ButtonAudioPlayer3 = AVAudioPlayer(contentsOfURL: ButtonAudioURL3, error: nil)
-        ButtonAudioPlayer4 = AVAudioPlayer(contentsOfURL: ButtonAudioURL4, error: nil)
-        ButtonAudioPlayer5 = AVAudioPlayer(contentsOfURL: ButtonAudioURL5, error: nil)
-        ButtonAudioPlayer6 = AVAudioPlayer(contentsOfURL: ButtonAudioURL6, error: nil)
-        ButtonAudioPlayer7 = AVAudioPlayer(contentsOfURL: ButtonAudioURL7, error: nil)
+        ButtonAudioPlayer1 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL1)
+        ButtonAudioPlayer2 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL2)
+        ButtonAudioPlayer3 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL3)
+        ButtonAudioPlayer4 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL4)
+        ButtonAudioPlayer5 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL5)
+        ButtonAudioPlayer6 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL6)
+        ButtonAudioPlayer7 = try! AVAudioPlayer(contentsOfURL: ButtonAudioURL7)
         
         //Starwars Main theme
         ButtonAudioPlayer7.play()
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         
         if userEnteredInput == false {
             calculator.allClear()
-            println("In Clear function. Input array is now: \(calculator.inputArray)")
+            print("In Clear function. Input array is now: \(calculator.inputArray)")
         }
         display.text = "0"
         userEnteredInput = false
@@ -135,8 +135,8 @@ class ViewController: UIViewController {
     }
     
     //allow for upside down view
-    override func supportedInterfaceOrientations() -> Int{
-        return Int(UIInterfaceOrientationMask.All.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.All
     }
 }
 

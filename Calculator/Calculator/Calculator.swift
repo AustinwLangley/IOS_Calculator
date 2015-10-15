@@ -18,17 +18,17 @@ class Calculator {
     
     func insertIntoArray(input: String){
         inputArray.append(input)
-        println("The Array: \(inputArray)")
+        print("The Array: \(inputArray)")
         // validation
     }
     
     func operationCounter (operation: String) -> String {
         if operation == "×"{
             xCounter++
-            println("x counter is: \(xCounter)")
-            println("d counter is: \(dCounter)")
-            println("p counter is: \(pCounter)")
-            println("m counter is: \(mCounter)")
+            print("x counter is: \(xCounter)")
+            print("d counter is: \(dCounter)")
+            print("p counter is: \(pCounter)")
+            print("m counter is: \(mCounter)")
             
             if (xCounter == 1 && pCounter == 1) || (xCounter == 1 && mCounter == 1) {
                 return inputArray[2]
@@ -40,7 +40,7 @@ class Calculator {
                 let firstOperation = firstOperand * secondOperand
                 xCounter = 1
                 inputArray = [inputArray[0], inputArray[1], "\(firstOperation)", inputArray[3]]
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(firstOperation)"
             }
             
@@ -50,7 +50,7 @@ class Calculator {
                 let firstOperation = firstOperand * secondOperand
                 xCounter = 1
                 inputArray = [inputArray[0], inputArray[1], "\(firstOperation)", inputArray[3]]
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(firstOperation)"
             }
             
@@ -62,7 +62,7 @@ class Calculator {
                     pCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "×" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 }
                 if mCounter == 1 {
@@ -72,7 +72,7 @@ class Calculator {
                     mCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "×" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 } else {
                     let firstOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
@@ -81,17 +81,17 @@ class Calculator {
                     xCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "×" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 }
             }
         }
         if operation == "÷"{
             dCounter++
-            println("x counter is: \(xCounter)")
-            println("d counter is: \(dCounter)")
-            println("p counter is: \(pCounter)")
-            println("m counter is: \(mCounter)")
+            print("x counter is: \(xCounter)")
+            print("d counter is: \(dCounter)")
+            print("p counter is: \(pCounter)")
+            print("m counter is: \(mCounter)")
             
             if dCounter == 1 && pCounter == 1 || (dCounter == 1 && mCounter == 1){
                 return inputArray[2]
@@ -103,7 +103,7 @@ class Calculator {
                 let firstOperation = secondOperand / firstOperand
                 dCounter = 1
                 inputArray = [inputArray[0], inputArray[1], "\(firstOperation)", inputArray[3]]
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(firstOperation)"
             }
             
@@ -113,7 +113,7 @@ class Calculator {
                 let firstOperation = secondOperand / firstOperand
                 dCounter = 1
                 inputArray = [inputArray[0], inputArray[1], "\(firstOperation)", inputArray[3]]
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(firstOperation)"
             }
 
@@ -125,7 +125,7 @@ class Calculator {
                     pCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "÷" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 }
                 if mCounter == 1 {
@@ -135,7 +135,7 @@ class Calculator {
                     mCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "÷" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 } else {
                     let firstOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
@@ -144,7 +144,7 @@ class Calculator {
                     dCounter = 1
                     inputArray = []
                     inputArray = ["\(firstOperation)", "÷" ]
-                    println("input array after counter is: \(inputArray)")
+                    print("input array after counter is: \(inputArray)")
                     return "\(firstOperation)"
                 }
             }
@@ -158,7 +158,7 @@ class Calculator {
                 pCounter = 1
                 inputArray = []
                 inputArray = ["\(firstOperation)", "+" ]
-                println("input array after counter is: \(inputArray)")
+                print("input array after counter is: \(inputArray)")
                 return "\(firstOperation)"
             }
         }
@@ -171,7 +171,7 @@ class Calculator {
                 mCounter = 1
                 inputArray = []
                 inputArray = ["\(firstOperation)", "−" ]
-                println("input array after counter is: \(inputArray)")
+                print("input array after counter is: \(inputArray)")
                 return "\(firstOperation)"
             }
         }
@@ -186,20 +186,20 @@ class Calculator {
                     let firstOperation = firstOperand * secondOperand
             
                 if inputArray[1] == "+" {
-                    println("I multiplied then added")
+                    print("I multiplied then added")
                     let thirdOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                     let answer = firstOperation + thirdOperand
                     inputArray = []
-                    println("Input array is now: \(inputArray)")
+                    print("Input array is now: \(inputArray)")
                     return "\(answer)"
                 }
             
                 if inputArray[1] == "−" {
-                    println("I multiplied then subtracted")
+                    print("I multiplied then subtracted")
                     let thirdOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                     let answer = thirdOperand - firstOperation
                     inputArray = []
-                    println("Input array is now: \(inputArray)")
+                    print("Input array is now: \(inputArray)")
                     return "\(answer)"
                 }
             }
@@ -209,20 +209,20 @@ class Calculator {
                     let firstOperation = secondOperand / firstOperand
                 
                 if inputArray[1] == "+" {
-                    println("I multiplied then added")
+                    print("I multiplied then added")
                     let thirdOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                     let answer = firstOperation + thirdOperand
                     inputArray = []
-                    println("Input array is now: \(inputArray)")
+                    print("Input array is now: \(inputArray)")
                     return "\(answer)"
                 }
                 
                 if inputArray[1] == "−" {
-                    println("I multiplied then subtracted")
+                    print("I multiplied then subtracted")
                     let thirdOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                     let answer = thirdOperand - firstOperation
                     inputArray = []
-                    println("Input array is now: \(inputArray)")
+                    print("Input array is now: \(inputArray)")
                     return "\(answer)"
                 }
             }
@@ -231,45 +231,45 @@ class Calculator {
             
         if inputArray[1] == "×"{
             if inputArray.count >= 2 {
-                println("I multiplied")
+                print("I multiplied")
                 let firstOperand = NSNumberFormatter().numberFromString(inputArray.removeLast())!.doubleValue
                 let secondOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                 let answer = firstOperand * secondOperand
                 inputArray = []
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(answer)"
             }
         }
         if inputArray[1] == "÷" {
             if inputArray.count >= 2 {
-                println("I divided")
+                print("I divided")
                 let firstOperand = NSNumberFormatter().numberFromString(inputArray.removeLast())!.doubleValue
                 let secondOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                 let answer = secondOperand / firstOperand
                 inputArray = []
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(answer)"
             }
          }
         if inputArray[1] == "+"{
             if inputArray.count >= 2 {
-                println("I added")
+                print("I added")
                 let firstOperand = NSNumberFormatter().numberFromString(inputArray.removeLast())!.doubleValue
                 let secondOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                 let answer = firstOperand + secondOperand
                 inputArray = []
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(answer)"
             }
         }
         if inputArray[1] == "−" {
             if inputArray.count >= 2 {
-                println("I subtracted")
+                print("I subtracted")
                 let firstOperand = NSNumberFormatter().numberFromString(inputArray.removeLast())!.doubleValue
                 let secondOperand = NSNumberFormatter().numberFromString(inputArray[0])!.doubleValue
                 let answer = secondOperand - firstOperand
                 inputArray = []
-                println("Input array is now: \(inputArray)")
+                print("Input array is now: \(inputArray)")
                 return "\(answer)"
             }
         }
